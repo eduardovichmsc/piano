@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"piano" - mini project</title>
+
+    <!-- pre style -->
+    <!-- <link rel="stylesheet" href="src/fonts/ttfirsneue.css"> -->
+    <link rel="stylesheet" href="src/css/stylesheet.css">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/media.css">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
+
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">
+                letmeplaypiano.online
+            </div>
+            <div class="nav__block">
+                <a href="" class="nav__link" data-link="contacts">contacts</a>
+                <a href="" class="nav__link" data-link="instruments">q/a</a>
+                <a href="" class="nav__link" data-link="submit">submit sounds</a>
+                <a href="" class="nav__link" data-link="login">login</a>
+            </div>
+            <div class="nav__instruments">
+                <div class="nav__main__instruments">
+                    <button class="nav__main__instrument-title" data-instrument-name="key"><h4>Key</h3</button>
+                    <button class="nav__main__instrument-title" data-instrument-name="bell"><h4>Bell</h3</button>
+                    <button class="nav__main__instrument-title" data-instrument-name="guitar"><h4>Guitar</h4></button>
+                </div>
+                <div class="nav__sub__instruments">
+                    <!-- <button class="nav__sub__instrument-item"><h4>Electric</h4></button>
+                    <button class="nav__sub__instrument-item"><h4>Electric</h4></button>
+                    <button class="nav__sub__instrument-item"><h4>Electric</h4></button>
+                    <button class="nav__sub__instrument-item"><h4>Electric</h4></button> -->
+                </div>
+            </div>
+        </nav>
+
+        <div class="play__block">
+            <div class="play__block__bg">
+                <img src="src/img/bg.jpg" alt="bg" class="play__block__bg-item">
+            </div>
+            <div class="piano__wrapper">
+                <div class="piano__info">
+                    <div class="info__text">
+                        <h5 class="info__text-h5 piano__info__title" data-sound-info="category">Category</h5>
+                        <h4 class="info__text-h4">Key</h4>
+                    </div>
+                    <div class="info__text">
+                        <h5 class="info__text-h5 piano__info__title" data-sound-info="soundname">Sound Name</h5>
+                        <h4 class="info__text-h4">Amiri</h4>
+                    </div>
+                    <div class="info__text">
+                        <h5 class="info__text-h5 piano__info__title" data-sound-info="instrument-source">Publisher</h5>
+                        <a href="https://wavsupply.net/product/dynox-memory-serum-bank/" class="info__text-h4 info__text-a">Dynox</a>
+                    </div>
+                    <div class="piano__volume__slider">
+                        <h5 class="info__text-h5 piano__info__title">Volume / Gain</h5>
+                        <input type="range" min="0" max="1" step="0.1" value="0.9" list="markers">
+                        <datalist id="markers">
+                            <option value="0"></option>
+                            <option value="0.2"></option>
+                            <option value="0.4"></option>
+                            <option value="0.6"></option>
+                            <option value="0.8"></option>
+                            <option value="1"></option>
+                        </datalist>
+                    </div>
+                    <div class="info__notes">
+                        <h5 class="info__text-h5 piano__info__title">Show Notes</h5>
+                        <div class="notes__name-wrapper">
+                            <div class="notes__name-item" data-hint="off"><h5 class="info__text-h5">off</h5></div>
+                            <div class="notes__name-item" data-hint="classic"><h5 class="info__text-h5">classic</h5></div>
+                            <div class="notes__name-item" data-hint="latin"><h5 class="info__text-h5">latin</h5></div>
+                            <div class="notes__name-item" data-hint="qwerty"><h5 class="info__text-h5">qwerty</h5></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="piano__block">
+                    
+                    <!-- content rendered by render.js -->
+                    
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    
+    <!-- modules -->
+    <script src="src/js/color-thief.min.js"></script>
+
+    <!-- scripts -->
+    <script src="src/js/render.js"></script>
+    <script src="src/js/piano.js"></script>
+    <script src="src/js/scripts.js"></script>
+
+</body>
+</html>
