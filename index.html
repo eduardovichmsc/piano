@@ -8,25 +8,20 @@
     <!-- pre style -->
     <!-- <link rel="stylesheet" href="src/fonts/ttfirsneue.css"> -->
     <link rel="stylesheet" href="src/css/stylesheet.css">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
 
     <!-- custom styles -->
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/media.css">
-    <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
 
 </head>
 <body>
 
     <div class="container">
+
         <nav>
             <div class="logo">
                 letmeplaypiano.online
-            </div>
-            <div class="nav__block">
-                <a href="" class="nav__link" data-link="contacts">contacts</a>
-                <a href="" class="nav__link" data-link="instruments">q/a</a>
-                <a href="" class="nav__link" data-link="submit">submit sounds</a>
-                <a href="" class="nav__link" data-link="login">login</a>
             </div>
             <div class="nav__instruments">
                 <div class="nav__main__instruments">
@@ -44,9 +39,6 @@
         </nav>
 
         <div class="play__block">
-            <div class="play__block__bg">
-                <img src="src/img/bg.jpg" alt="bg" class="play__block__bg-item">
-            </div>
             <div class="piano__wrapper">
                 <div class="piano__info">
                     <div class="info__text">
@@ -65,9 +57,9 @@
                         <h5 class="info__text-h5 piano__info__title">Volume / Gain</h5>
                         <input type="range" min="0" max="1" step="0.1" value="0.9" list="markers">
                         <datalist id="markers">
-                            <option value="0"></option>
-                            <option value="0.2"></option>
-                            <option value="0.4"></option>
+                            <option value="0">sdf</option>
+                            <option value="0.2">asd</option>
+                            <option value="0.4">asd</option>
                             <option value="0.6"></option>
                             <option value="0.8"></option>
                             <option value="1"></option>
@@ -90,9 +82,36 @@
                     
                 </div>
             </div>
+
+            <button class="info__text-h5 piano__fscreen__enter">enter full screen mode</button>
         </div>    
+
+        
+        <div class="text__wrapper">
+            <h4>о проекте</h4>
+            <h5>
+                Добро пожаловать на letmeplaypiano. Цель создания сайта проста, поиграть на инструментах через браузер. Сайт представляет собой мультиинструментальную мини-платформу, с ограниченными возможностями. Про звуки: в первую очередь автор создавал сайт для себя, поэтому в платформе пока имеется только favourite звуки автора. Вы также можете отправить свои звуки через <a href="#social-media">социальные сети</a> (в будущем возможно через сайт), но должна быть возможность открыть их через VSTi плагины как Serum, Kontakt, Electra X, FLEX.
+            </h5>
+
+            <h4>фукнционал</h4>
+            <ul>
+                <li>проигрывание звуков</li>
+                <li>изменение громкости клавиш</li>
+                <li>переключать режимы отображение нот</li>
+                <li>ссылка на автора звука / первоисточник</li>
+            </ul>
+
+            <h4>как связаться?</h4>
+            <ul id="social-media">
+                <li><a href="https://instagram.com/eduardovichmsc">instagram</a></li>
+                <li><a href="https://t.me/...">telegram</a></li>
+            </ul>
+
+            <h4>source code</h4>
+            <a href="https://eduardovichmsc.github.io/piano">github</a>
+        </div>
+        
     </div>
-    
     
     <!-- modules -->
     <script src="src/js/color-thief.min.js"></script>

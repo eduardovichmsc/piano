@@ -31,34 +31,6 @@ document.querySelectorAll('.nav__main__instrument-title').forEach(mainInstrument
 
 
 
-
-
-
-// nav__links addressing
-const navLinks = document.querySelectorAll(".nav__link");
-navLinks.forEach(navLink => {
-    navLink.addEventListener("click", (e)=> {
-        e.preventDefault();
-        
-        const dataLink = navLink.getAttribute('data-link');
-        if (dataLink == 'instruments') {
-            if (document.querySelector('.nav__instruments').classList.contains('show')){
-                document.querySelector('.nav__instruments').classList.remove('show');
-            } else {
-                document.querySelector('.nav__instruments').classList.add('show');
-            }
-        }
-        if (dataLink == 'contacts') {
-            window.location.href = "contacts.html";
-        }
-        if (dataLink == 'login') {
-            window.location.href = "login.php";
-        }
-        });
-});
-
-
-
 // instrument links active style
 const instrLinks = document.querySelectorAll('.nav__main__instrument-title');
 instrLinks.forEach(instrLink=>{
